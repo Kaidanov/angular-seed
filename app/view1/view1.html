@@ -1,1 +1,19 @@
-<p>This is the partial for view 1.</p>
+<p>This is the partial for view first.</p>
+<div  data-ng-controller="Products as vm">
+    <div >
+        <div data-ng-repeat="product in vm.products">
+            {{ product.productName }}
+        </div>
+        <div >
+            <div data-ng-repeat="product in vm.products" >
+                <img ng-src="{{product.icon}}" alt="{{product.productName}}"  />
+                <div>Price:  {{product.price}}</div>
+                <a href="#!/view2" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                    <i class="icon-shopping-cart" />
+                    <b>{{cart.getTotalCount()}}</b> Add to Cart <b>{{cart.getTotalPrice() | currency}}</b>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
