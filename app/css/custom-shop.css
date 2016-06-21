@@ -1,0 +1,16 @@
+﻿.products {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid lightgrey;
+    margin: 2px 2px 2px 2px;
+    padding-top: 0;
+    float: none;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-collapse {
+        height: auto !important;
+        padding-left: 0 !important;
+    }
+}

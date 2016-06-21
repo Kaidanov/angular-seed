@@ -1,18 +1,23 @@
-'use strict';
+(function () {
 
-// Declare app level module which depends on views, and components
-var app = angular.module('myApp', [
-  'ngRoute',
-  'ngResource',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider',  function ($locationProvider, $routeProvider){//'$httpProvider',  function ($locationProvider, $routeProvider, $httpProvider) {
-  $locationProvider.hashPrefix('!');
+    'use strict';
 
-  $routeProvider.otherwise({ redirectTo: '/view1' });
+    // Declare app level module which depends on views, and components
+     angular.module('myApp', [
+      'ngRoute',
+      'ngResource',
+      'myApp.view1',
+      'myApp.view2',
+      'myApp.version',
+      'app.core'
+    ]).
+    config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
+        $locationProvider.hashPrefix('!');
 
+        $routeProvider.otherwise({ redirectTo: '/view1' });
+    }]);
+
+})();
 
   //$httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
   //$httpProvider.defaults.transformRequest = [function (data) {
@@ -49,26 +54,49 @@ config(['$locationProvider', '$routeProvider',  function ($locationProvider, $ro
 
   //    return angular.isObject(data) && String(data) !== '[object File]' ? param(data) : data;
   //}];
-}]);
+//}]);
 
-app.factory('dataservice', ['$http', function ($http) {
 
-           var service = {
-               getProducts: getProducts
-           };
+//(function () {
+//    angular.module('myApp')
+//      .factory('dataservice', ['$http', function ($http) {
+//          var service = {
+//              getProducts: getProducts
+//          };
+
+//          return service;
+
+//          function getProducts() {
+//              return $http.get('data.json').then(getProductsComplete);
+//          }
+
+//          function getProductsComplete(data, status, headers, config) {
+//              return data.data;
+//          };
+//      }]);
+//}());
+
+//angular.module('myApp').factory('dataservice', ['$http', function ($http) {
+
+//           var service = {
+//               getProducts: getProducts
+//           };
  
-           return service;
+//           return service;
 
-           function getProducts() {
-               return $http.get('data.json').then(getProductsComplete);
-           }
+//           function getProducts() {
+//               return $http.get('data.json').then(getProductsComplete);
+//           }
 
-           function getProductsComplete(data, status, headers, config) {
-               return data.data;
-           };
+//           function getProductsComplete(data, status, headers, config) {
+//               return data.data;
+//           };
 
            
 
-       }]);
+//}]);
+
+
+
 //app.run(['$q', '$rootScope', function ($q, $rootScope) {
 //}]);

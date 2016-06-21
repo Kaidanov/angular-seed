@@ -2,6 +2,54 @@
   "products": [
     {
       "productName": "IPhone6",
+      "id": "1",
+      "serial": "2daf04d9-e2b7-46ff-95c0-527273443f80",
+      "price": "$500",
+      "image": "images/iphone6.jpg",
+      "icon": "images/iphone6icon.jpg",
+      "description": {
+        "fullDescription": "IPhone6 is a new apple phone",
+        "IMAC": "f1b2dbe1-96b3-410c-abf8-8e5e913209b8",
+        "color": [
+          "Silver",
+          "Space Gray"
+        ],
+        "capacity": [
+          "16GB",
+          "64GB"
+        ],
+        "weight": "Weight: 4.55 ounces (129 grams)",
+        "dimensions": "138.1 mm * 67.0 mm",
+        "releaseDate": "2016-03-22T00:00:00.000Z",
+        "instock": true
+      }
+    },
+    {
+      "productName": "Samsung Galaxy S6",
+      "id": "2",
+      "serial": "52eb76c2-cc70-44a1-a215-f6f80b25b3c7",
+      "price": "$599",
+      "image": "images/sm6.jpg",
+      "icon": "images/sm6icon.jpg",
+      "description": {
+        "fullDescription": "SamsungGalaxyS6 is a new android phone",
+        "IMAC": "ae282c02-aed5-4719-877c-689500d394c0",
+        "color": [
+          "Silver",
+          "Space Gray"
+        ],
+        "capacity": [
+          "16GB",
+          "64GB"
+        ]
+      },
+      "weight": "Weight: 4.55 ounces (129 grams)",
+      "dimensions": "129.2 mm ",
+      "releaseDate": "2016-06-25T00:00:00.000Z",
+      "instock": true
+    },
+      {
+      "productName": "IPhone6",
       "id": "1", 
       "serial": "2daf04d9-e2b7-46ff-95c0-527273443f80",
       "price" :  "$500",
@@ -26,9 +74,105 @@
     },
     {
       "productName": "Samsung Galaxy S6",
-      "id": "2", 
+      "id": "2",
       "serial": "52eb76c2-cc70-44a1-a215-f6f80b25b3c7",
-      "price" :  "$599",
+      "price": "$599",
+      "image": "images/sm6.jpg",
+      "icon": "images/sm6icon.jpg",
+      "description": {
+        "fullDescription": "SamsungGalaxyS6 is a new android phone",
+        "IMAC": "ae282c02-aed5-4719-877c-689500d394c0",
+        "color": [
+          "Silver",
+          "Space Gray"
+        ],
+        "capacity": [
+          "16GB",
+          "64GB"
+        ]
+      },
+      "weight": "Weight: 4.55 ounces (129 grams)",
+      "dimensions": "129.2 mm ",
+      "releaseDate": "2016-06-25T00:00:00.000Z",
+      "instock": true
+    },
+      {
+      "productName": "IPhone6",
+      "id": "1", 
+      "serial": "2daf04d9-e2b7-46ff-95c0-527273443f80",
+      "price" :  "$500",
+      "image": "images/iphone6.jpg",
+      "icon": "images/iphone6icon.jpg",
+      "description": {
+        "fullDescription": "IPhone6 is a new apple phone",
+        "IMAC": "f1b2dbe1-96b3-410c-abf8-8e5e913209b8",
+        "color": [
+          "Silver",
+          "Space Gray"
+        ],
+        "capacity": [
+          "16GB",
+          "64GB"
+        ],
+        "weight": "Weight: 4.55 ounces (129 grams)",
+        "dimensions": "138.1 mm * 67.0 mm",
+        "releaseDate": "2016-03-22T00:00:00.000Z",
+        "instock": true
+      }
+    },
+    {
+      "productName": "Samsung Galaxy S6",
+      "id": "2",
+      "serial": "52eb76c2-cc70-44a1-a215-f6f80b25b3c7",
+      "price": "$599",
+      "image": "images/sm6.jpg",
+      "icon": "images/sm6icon.jpg",
+      "description": {
+        "fullDescription": "SamsungGalaxyS6 is a new android phone",
+        "IMAC": "ae282c02-aed5-4719-877c-689500d394c0",
+        "color": [
+          "Silver",
+          "Space Gray"
+        ],
+        "capacity": [
+          "16GB",
+          "64GB"
+        ]
+      },
+      "weight": "Weight: 4.55 ounces (129 grams)",
+      "dimensions": "129.2 mm ",
+      "releaseDate": "2016-06-25T00:00:00.000Z",
+      "instock": true
+    },
+      {
+      "productName": "IPhone6",
+      "id": "1", 
+      "serial": "2daf04d9-e2b7-46ff-95c0-527273443f80",
+      "price" :  "$500",
+      "image": "images/iphone6.jpg",
+      "icon": "images/iphone6icon.jpg",
+      "description": {
+        "fullDescription": "IPhone6 is a new apple phone",
+        "IMAC": "f1b2dbe1-96b3-410c-abf8-8e5e913209b8",
+        "color": [
+          "Silver",
+          "Space Gray"
+        ],
+        "capacity": [
+          "16GB",
+          "64GB"
+        ],
+        "weight": "Weight: 4.55 ounces (129 grams)",
+        "dimensions": "138.1 mm * 67.0 mm",
+        "releaseDate": "2016-03-22T00:00:00.000Z",
+        "instock": true
+      }
+    },
+    {
+      "productName": "Samsung Galaxy S6",
+      "id": "2",
+      "serial": "52eb76c2-cc70-44a1-a215-f6f80b25b3c7",
+      "price": "$599",
       "image": "images/sm6.jpg",
       "icon": "images/sm6icon.jpg",
       "description": {

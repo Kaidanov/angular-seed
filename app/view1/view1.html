@@ -1,19 +1,39 @@
-<p>This is the partial for view first.</p>
-<div  data-ng-controller="Products as vm">
-    <div >
-        <div data-ng-repeat="product in vm.products">
-            {{ product.productName }}
-        </div>
-        <div >
-            <div data-ng-repeat="product in vm.products" >
-                <img ng-src="{{product.icon}}" alt="{{product.productName}}"  />
-                <div>Price:  {{product.price}}</div>
-                <a href="#!/view2" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
-                    <i class="icon-shopping-cart" />
-                    <b>{{cart.getTotalCount()}}</b> Add to Cart <b>{{cart.getTotalPrice() | currency}}</b>
-                </a>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <p>This is the partial for view first.</p>
+
+            <div data-ng-controller="Products as vm">
+                <div data-ng-repeat="product in vm.products" style="display:inline-block;  text-align: center; border: 1px solid lightgrey;margin: 2px 2px 2px 2px; padding-top: 0; float:none;">
+                    <!--<div my-product></div>-->
+
+                    <div>{{ product.productName }}</div>
+
+                    <img ng-src="{{product.icon}}" alt="{{product.productName}}" style="width:80px" />
+                    <div>Price:  {{product.price}}</div>
+
+
+
+                    <label for="chklabl">
+                        <input type="checkbox"
+                               ng-model="checked"
+                               name="chklabl"
+                               id="chklabl"> More Details
+                    </label>
+                    <div ng-show="checked">
+                        Full Description : {{product.description.fullDescription }}
+                    </div>
+                    <div>
+                        <button class="btn btn-block btn-success"
+                                ng-click="cart.addItem(product.sku, product.name, product.price, 1)">
+                            <i class="icon-shopping-cart icon-white" /> add to cart
+                        </button>
+                    </div>
+
+                </div>
             </div>
+
         </div>
     </div>
-
 </div>
+

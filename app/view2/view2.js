@@ -22,4 +22,10 @@ angular.module('myApp.view2', ['ngRoute'])
     //        console.log('got those items in the cart' + vm.cartItems.toString());
     //    });
     //}
-}]);
+}])
+.directive('myProduct', function () {
+    return {
+        template: 'Product Name : {{ product.productName }}'
+    };
+})
+;

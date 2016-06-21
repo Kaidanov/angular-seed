@@ -1,17 +1,21 @@
 'use strict';
 
 angular.module('myApp.view1', ['ngRoute'])
-
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.html',
-    controller: 'Products'
-  });
+    $routeProvider.when('/view1', {
+        templateUrl: 'view1/view1.html',
+        controller: 'Products'
+    });
 }])
 
-.controller('Products', ['dataservice', function (dataservice) {
+.controller('Products', Products);
+
+Products.$inject = ['dataservice'];
+
+function Products(dataservice) {
     var vm = this;
     vm.products = [];
+    vm.store = [];
     vm.title = 'Products';
 
     activate();
@@ -29,4 +33,4 @@ angular.module('myApp.view1', ['ngRoute'])
             return vm.products;
         });
     }
-}]);
+}
